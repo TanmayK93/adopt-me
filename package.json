@@ -1,0 +1,54 @@
+{
+  "name": "adopt-me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build --public-url ./dist/ src/index.html",
+    "clear-build-cache": "rm -rf .cache/ dist/",
+    "dev": "parcel src/index.html",
+    "start": "npm run build && babel-node server/index.js",
+    "test": "jest",
+    "test:update": "jest -u",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "jest": "^25.1.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "@babel/node": "^7.8.7",
+    "@emotion/babel-preset-css-prop": "^10.0.27",
+    "@emotion/core": "^10.0.28",
+    "@frontendmasters/pet": "^1.0.3",
+    "@reach/router": "^1.3.3",
+    "@testing-library/react": "^10.0.1",
+    "babel-cli": "^6.26.0",
+    "express": "^4.17.1",
+    "loadash": "^1.0.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}
